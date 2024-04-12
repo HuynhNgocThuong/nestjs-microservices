@@ -14,3 +14,8 @@
 - pnpm i -D @types/passport-local
 - pnpm i @nestjs/jwt passport-jwt
 - pnpm i -D @types/passport-jwt
+
+# K8S
+
+- kubectl create deployment reservations --image=<image-name> --dry-runs=client -o yaml > deployment.yaml
+- kubectl create secret docker-registry gcr-json-key --docker-server=<gcr-server-cloud> --docker-username=\_json_key --docker-password="$(cat ./file.json)" --docker-email=<abcd@gmail.com>
